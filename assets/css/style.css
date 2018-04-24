@@ -1,0 +1,57 @@
+body{
+    background-image: url("../images/bg.jpg");
+}
+.animal-btn {
+    position: relative;
+    background-color: rgb(240, 183, 237);
+    border-radius: 20px;
+    font-size: 20px;
+    color:black;
+    padding: 10px;
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.animal-btn:after {
+    content: "";
+    background: rgb(128, 89, 151);
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.animal-btn:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+#animal-form,#animal-input{
+    font-size: 30px;
+    text-align: right;
+}
+
+#addanimal{
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    background-color: blueviolet;
+    padding: 5px;
+    margin: 10px;
+}
+.unit{
+    float: left;
+    margin: 20px;
+}
+
+
