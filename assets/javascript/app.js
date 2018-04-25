@@ -16,7 +16,7 @@ function displayAnimalInfo() {
     }).then(function (response) {
         $("#animals").empty();
         console.log(response);
-
+        
         for (var i = 0; i < response.data.length; i++) {
            // gifcount = gifLocation;
 
@@ -83,6 +83,8 @@ function renderButtons() {
                 // Adding the button to the buttons-view div
                 $("#animalButton").append(a);
             }
+            $("#animal-input").val('');
+
         }
 
 // This function handles events where a animal button is clicked
